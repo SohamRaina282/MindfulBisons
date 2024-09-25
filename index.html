@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Generator</title>
+</head>
+<body>
+    <h1>Enter Your Spending Habits and Weekly Expenditure</h1>
+    <form action="/" method="POST">
+        <label for="description">Describe Your Spending Habits:</label><br>
+        <textarea name="description" rows="5" cols="50" required></textarea><br><br>
+
+        <label for="lumpsum">Estimated Weekly Expenditure ($):</label><br>
+        <input type="number" name="lumpsum" required><br><br>
+
+        <label for="priorities">Specify Spending Priorities (optional):</label><br>
+        <input type="text" name="priorities" placeholder="e.g., Food, Entertainment, Savings"><br><br>
+        
+        <button type="submit">Generate Budget</button>
+    </form>
+</body>
+</html>
