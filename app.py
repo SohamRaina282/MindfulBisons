@@ -4,10 +4,10 @@ import sqlite3
 
 # Initialize Flask app
 app = Flask(__name__)
-app.secret_key = '61fd78be9c03ca2319dde75831e4f33b'
+app.secret_key = ''
 
 # Set your Cohere API key
-cohere_api_key = 'VIIgvUdK6kcUYD55qo0b2W0AYQKrotu8b7PrCS7o'
+cohere_api_key = ''
 co = cohere.Client(cohere_api_key)
 
 # Database setup (Optional)
@@ -114,3 +114,4 @@ init_db()
 
 if __name__ == '__main__':
     app.run(debug=True)
+
